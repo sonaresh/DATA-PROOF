@@ -1,0 +1,6 @@
+{
+  "request_id":"demo-join-001","actor":"data-engineer@example.com","role_authorized":true,"operation":"JOIN",
+  "source_assets":["customer_identity","health_events"],"target":"derived_customer_health",
+  "state":{"classification":"confidential","purpose":"research","lineage_complete":true,"quality_score":0.93,"age_hours":4,"region":"us-east-2","disclosure_risk":0.35,"requested_fields":[],"required_fields":[],"downstream":"analytics","policy_version":"v1.0.0"},
+  "metadata":{"composition_risk":0.92}
+}
