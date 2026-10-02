@@ -1,0 +1,6 @@
+{
+  "request_id":"demo-ai-001","actor":"rag-agent","role_authorized":true,"operation":"GENERATE_AI_CONTEXT",
+  "source_assets":["customer_360"],"target":"billing-assistant",
+  "state":{"classification":"restricted","purpose":"billing","lineage_complete":true,"quality_score":0.96,"age_hours":2,"region":"us-east-1","disclosure_risk":0.25,"requested_fields":["customer_id","invoice_total","payment_status","ssn","dob","address","medical_notes","email","phone","zipcode"],"required_fields":["customer_id","invoice_total","payment_status"],"downstream":"ai_context","policy_version":"v1.0.0"},
+  "metadata":{}
+}

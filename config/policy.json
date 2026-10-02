@@ -1,0 +1,46 @@
+{
+  "policy_version": "v1.0.0",
+  "allowed_purposes": [
+    "billing",
+    "fraud_detection",
+    "customer_support",
+    "analytics",
+    "research"
+  ],
+  "allowed_regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "min_quality_score": 0.8,
+  "max_age_hours": 24,
+  "require_lineage_for": [
+    "JOIN",
+    "TRANSFORM",
+    "SHARE",
+    "EXPORT",
+    "TRAIN_AI",
+    "GENERATE_AI_CONTEXT"
+  ],
+  "composition_risk_threshold": 0.7,
+  "review_on_stale_policy": true,
+  "deny_on_purpose_mismatch": true,
+  "deny_on_residency_violation": true,
+  "sensitive_classifications": [
+    "restricted",
+    "regulated"
+  ],
+  "policy_aliases": {
+    "billing_summary": [
+      "billing",
+      "customer_support"
+    ],
+    "fraud_model": [
+      "fraud_detection"
+    ],
+    "internal_analytics": [
+      "analytics",
+      "research"
+    ]
+  }
+}

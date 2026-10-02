@@ -1,0 +1,6 @@
+{
+  "request_id":"demo-allow-001","actor":"analyst@example.com","role_authorized":true,"operation":"READ",
+  "source_assets":["s3://research/customer_billing"],"target":"internal-dashboard",
+  "state":{"classification":"internal","purpose":"billing","lineage_complete":true,"quality_score":0.98,"age_hours":1,"region":"us-east-1","disclosure_risk":0.15,"requested_fields":["customer_id","invoice_total","payment_status"],"required_fields":["customer_id","invoice_total","payment_status"],"downstream":"internal","policy_version":"v1.0.0"},
+  "metadata":{}
+}
