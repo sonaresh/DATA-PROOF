@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataproof"
+version = "0.1.0"
+description = "Runtime governance-state assurance for enterprise data transformations and AI consumption"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "Naresh Somara"}]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.30,<1",
+  "pydantic>=2.8,<3"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2,<9","httpx>=0.27,<1"]
+aws = ["boto3>=1.35,<2"]
+
+[project.scripts]
+dataproof = "dataproof.cli:main"
+dataproof-api = "dataproof.api:run"
+dataproof-benchmark = "dataproof.benchmark:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
