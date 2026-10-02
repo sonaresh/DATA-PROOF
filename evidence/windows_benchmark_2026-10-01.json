@@ -1,0 +1,59 @@
+{
+  "validation_date": "2026-10-01/02",
+  "environment": "Windows local prototype",
+  "summary": {
+    "scenario_families": 16,
+    "passed": 16,
+    "policy_conformance": 1,
+    "unrestricted_allow_errors": 0,
+    "uaer": 0
+  },
+  "ablation": {
+    "no_purpose": {
+      "passed": 13,
+      "total": 16,
+      "conformance": 0.8125
+    },
+    "no_residency": {
+      "passed": 14,
+      "total": 16,
+      "conformance": 0.875
+    },
+    "no_quality": {
+      "passed": 14,
+      "total": 16,
+      "conformance": 0.875
+    },
+    "no_lineage": {
+      "passed": 15,
+      "total": 16,
+      "conformance": 0.9375
+    },
+    "no_composition": {
+      "passed": 15,
+      "total": 16,
+      "conformance": 0.9375
+    },
+    "no_minimization": {
+      "passed": 15,
+      "total": 16,
+      "conformance": 0.9375
+    },
+    "no_policy_version": {
+      "passed": 15,
+      "total": 16,
+      "conformance": 0.9375
+    }
+  },
+  "integrity": {
+    "tested": 5000,
+    "detected": 5000,
+    "rate": 1
+  },
+  "latency": {
+    "executions": 32000,
+    "mean_us": 54.5545625,
+    "p95_us": 80.5,
+    "p99_us": 120.4
+  }
+}
