@@ -96,3 +96,22 @@ No credentials, account IDs, or secrets are committed to this repository.
 ## License
 
 Apache-2.0.
+
+
+## Validated v0.1.0 evidence
+
+The reference implementation has been reproduced on Windows and under Docker Compose.
+
+Validated results:
+- 6/6 local tests passed
+- 16/16 canonical scenario families passed
+- UAER = 0.0 in the configured benchmark
+- 5,000/5,000 GSTC mutations detected
+- 32,000 local timing executions
+- local mean = 54.55 µs, p95 = 80.50 µs, p99 = 120.40 µs
+- FastAPI health/evaluation/persistence/verification path passed
+- Docker build and containerized AI-overcollection path passed
+
+See [docs/VALIDATION.md](docs/VALIDATION.md) for the full validation record.
+
+> Performance values are environment-specific and should not be generalized to production deployments.
